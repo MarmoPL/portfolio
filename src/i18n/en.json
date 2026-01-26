@@ -59,6 +59,12 @@
       "title": "School Helper Bot",
       "shortDesc": "Discord bot helping students with schedules and school information during COVID.",
       "description": "A utility bot created during the pandemic to help students stay informed about schedule changes, current timetables, and daily school updates."
+    },
+    "solvro": {
+      "text": "I'm also a member of",
+      "working": "working on the",
+      "project": "mobile app project",
+      "learnMore": "Learn more about Solvro"
     }
   },
   "marmoEduPage": {

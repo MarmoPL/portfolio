@@ -178,13 +178,14 @@ export default function MarmoEduContent() {
         </div>
       </section>
 
-      {/* Timeline Section */}
+      {/* Timeline Section - temporarily disabled
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionTitle title={t('timeline.title')} subtitle={t('timeline.subtitle')} />
           <Timeline />
         </div>
       </section>
+      */}
 
       {/* Award Section */}
       <section className="py-16 bg-card/30">
@@ -217,27 +218,6 @@ export default function MarmoEduContent() {
               </motion.span>
             ))}
           </motion.div>
-        </div>
-      </section>
-
-      {/* Gallery Section */}
-      <section className="py-16 bg-card/30">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionTitle title={t('gallery.title')} subtitle="" />
-          <div className="grid md:grid-cols-3 gap-6">
-            {[1, 2, 3].map((item) => (
-              <motion.div
-                key={item}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: item * 0.1 }}
-                className="aspect-video bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl border border-border flex items-center justify-center"
-              >
-                <span className="text-muted text-sm">Screenshot {item}</span>
-              </motion.div>
-            ))}
-          </div>
         </div>
       </section>
     </div>

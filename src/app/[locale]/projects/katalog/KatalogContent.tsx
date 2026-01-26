@@ -2,7 +2,8 @@
 
 import { useTranslations, useLocale } from 'next-intl';
 import { motion } from 'framer-motion';
-import { ArrowLeft, View, Gamepad2, Bot, Database, Users, Rocket, Code2 } from 'lucide-react';
+import { ArrowLeft, Monitor, Gamepad2, Bot, Database, Users, Rocket, Code2 } from 'lucide-react';
+import Image from 'next/image';
 import Link from 'next/link';
 import SectionTitle from '@/components/ui/SectionTitle';
 
@@ -15,7 +16,7 @@ const techStack = [
 ];
 
 const features = [
-  { icon: View, key: 'tour' },
+  { icon: Monitor, key: 'tour' },
   { icon: Gamepad2, key: 'hunt' },
   { icon: Bot, key: 'ai' },
   { icon: Database, key: 'cms' },
@@ -83,14 +84,15 @@ export default function KatalogContent() {
               viewport={{ once: true }}
               className="relative"
             >
-              {/* Website mockup placeholder */}
-              <div className="aspect-video bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl border border-border overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <View className="w-16 h-16 text-primary/50 mx-auto mb-4" />
-                    <p className="text-muted text-sm">Website Screenshot</p>
-                  </div>
-                </div>
+              {/* Website screenshot */}
+              <div className="aspect-video rounded-2xl border border-border overflow-hidden">
+                <Image
+                  src="/images/projects/katalog-lo9/klo9-screen.png"
+                  alt="Katalog LO IX Screenshot"
+                  width={1920}
+                  height={1080}
+                  className="w-full h-full object-cover"
+                />
               </div>
             </motion.div>
           </div>
@@ -190,27 +192,6 @@ export default function KatalogContent() {
               </motion.span>
             ))}
           </motion.div>
-        </div>
-      </section>
-
-      {/* Gallery Section */}
-      <section className="py-16">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionTitle title="Screenshots" subtitle="" />
-          <div className="grid md:grid-cols-3 gap-6">
-            {[1, 2, 3].map((item) => (
-              <motion.div
-                key={item}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: item * 0.1 }}
-                className="aspect-video bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl border border-border flex items-center justify-center"
-              >
-                <span className="text-muted text-sm">Screenshot {item}</span>
-              </motion.div>
-            ))}
-          </div>
         </div>
       </section>
     </div>

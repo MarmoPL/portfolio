@@ -3,7 +3,7 @@
 import { useTranslations, useLocale } from 'next-intl';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { ExternalLink, ArrowRight, Award, Archive, Clock, CheckCircle } from 'lucide-react';
+import { ExternalLink, ArrowRight, Award, Archive, Clock, CheckCircle, MessageSquare } from 'lucide-react';
 import SectionTitle from '../ui/SectionTitle';
 import Link from 'next/link';
 
@@ -102,7 +102,7 @@ export default function Projects() {
                     />
                   ) : (
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <span className="text-muted text-sm">Project Screenshot</span>
+                      <MessageSquare className="w-16 h-16 text-primary/30" />
                     </div>
                   )}
                   {/* Status Badge */}
@@ -162,6 +162,39 @@ export default function Projects() {
             );
           })}
         </div>
+
+        {/* Solvro Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mt-12 p-6 md:p-8 bg-card rounded-2xl border border-border text-center"
+        >
+          <p className="text-lg text-muted mb-2">
+            {t('solvro.text')}
+          </p>
+          <p className="text-xl font-semibold mb-4">
+            <span className="text-primary">Solvro</span> – {t('solvro.working')}{' '}
+            <a
+              href="https://github.com/Solvro/mobile-topwr"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:underline"
+            >
+              ToPWR
+            </a>{' '}
+            {t('solvro.project')}
+          </p>
+          <a
+            href="https://solvro.pwr.edu.pl/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-primary font-medium hover:underline"
+          >
+            {t('solvro.learnMore')}
+            <ExternalLink className="w-4 h-4" />
+          </a>
+        </motion.div>
       </div>
     </section>
   );
