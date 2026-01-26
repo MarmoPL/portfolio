@@ -1,0 +1,179 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Marcin Czembrowski",
+    "nickname": "Marmo",
+    "role": "Full-Stack Developer",
+    "description": "I build modern web and mobile applications with passion for clean code and great user experiences.",
+    "cta": "View My Work",
+    "contact": "Get in Touch"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Get to know me better",
+    "description": "I'm a passionate developer from Wroclaw, Poland, with experience in building full-stack applications. From mobile apps to complex web systems, I enjoy tackling challenging problems and creating solutions that make a difference.",
+    "paragraph2": "My journey in programming started with curiosity and has evolved into a deep commitment to continuous learning. I specialize in React, TypeScript, Node.js, and mobile development, always staying up-to-date with the latest technologies."
+  },
+  "skills": {
+    "title": "Skills & Technologies",
+    "subtitle": "Tools I work with",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "mobile": "Mobile",
+    "tools": "Tools & Others"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "Some of my recent work",
+    "viewProject": "View Project",
+    "viewDetails": "View Details",
+    "status": {
+      "completed": "Completed",
+      "inProgress": "In Progress",
+      "archived": "Archived",
+      "awardWinner": "Award Winner"
+    },
+    "marmoEdu": {
+      "title": "Marmo EDU",
+      "shortDesc": "Award-winning Flutter mobile & web app with Python backend, integrating multiple educational data sources.",
+      "description": "A comprehensive multiplatform application designed to revolutionize education with modern technology."
+    },
+    "wls": {
+      "title": "Wroclawska Liga Siatkowa",
+      "shortDesc": "Volleyball league management system built with Vue, Vuetify and Directus backend with Auth0 integration.",
+      "description": "A web platform for managing volleyball league data, displaying player information, team standings, and match results."
+    },
+    "katalog": {
+      "title": "LO IX Katalog",
+      "shortDesc": "Interactive school catalog with 360 tours, scavenger hunt, and AI chat. Nearly 1,000 visitors!",
+      "description": "Next-generation school presentation platform featuring virtual tours, interactive exploration, and AI-powered guidance for prospective students."
+    },
+    "discordBot": {
+      "title": "School Helper Bot",
+      "shortDesc": "Discord bot helping students with schedules and school information during COVID.",
+      "description": "A utility bot created during the pandemic to help students stay informed about schedule changes, current timetables, and daily school updates."
+    }
+  },
+  "marmoEduPage": {
+    "hero": {
+      "title": "Marmo EDU",
+      "subtitle": "Award-Winning Educational Platform",
+      "description": "A comprehensive Flutter mobile and web application with full Python backend, connecting students to multiple educational data sources in one unified platform."
+    },
+    "overview": {
+      "title": "Project Overview",
+      "description": "Marmo EDU is a full-featured educational platform that combines a polished Flutter application (mobile & web) with a robust Python backend. The app integrates with multiple data sources including Librus, Edupage, JakDojade, and WolneLektury to provide students with a unified hub for all their educational needs. Built with Docker for scalability and featuring fast, secure Google Sign-In for multiplatform availability and enhanced user experience."
+    },
+    "timeline": {
+      "title": "Development Journey",
+      "subtitle": "From concept to award-winning platform"
+    },
+    "features": {
+      "title": "Key Features",
+      "mobile": "Multiplatform App",
+      "mobileDesc": "Flutter app for mobile and web with intuitive UI/UX, available everywhere",
+      "backend": "Scalable Backend",
+      "backendDesc": "Python FastAPI backend with MariaDB and Meilisearch, deployed via Docker",
+      "realtime": "Instant Notifications",
+      "realtimeDesc": "Real-time push notifications keeping students informed of changes",
+      "secure": "Google Sign-In",
+      "secureDesc": "Fast and secure authentication for safer, seamless user experience",
+      "integrations": "Data Integrations",
+      "integrationsDesc": "Connected to Librus, Edupage, JakDojade, WolneLektury and more"
+    },
+    "award": {
+      "title": "Award Recognition",
+      "subtitle": "Recognized for excellence in educational technology",
+      "description": "Marmo EDU has been honored for its innovative approach to educational software, demonstrating the impact of thoughtful design and technical excellence.",
+      "placeholder": "Award details coming soon"
+    },
+    "tech": {
+      "title": "Technology Stack"
+    },
+    "gallery": {
+      "title": "Screenshots"
+    },
+    "backToProjects": "Back to Projects"
+  },
+  "katalogPage": {
+    "hero": {
+      "title": "LO IX Katalog",
+      "subtitle": "Interactive School Catalog",
+      "description": "A next-generation school presentation platform for Liceum Ogolnoksztalcace nr IX in Wroclaw, helping prospective students explore the school's offerings."
+    },
+    "overview": {
+      "title": "Project Overview",
+      "description": "LO IX Katalog is an interactive web platform designed to showcase the educational offerings of one of Wroclaw's top high schools. The platform features immersive 360-degree virtual tours, an engaging scavenger hunt game, and AI-powered chat assistance to help students choose the right class profile. According to visit statistics, nearly 1,000 visitors have used the platform to learn about the school's offer."
+    },
+    "features": {
+      "title": "Key Features",
+      "tour": "360 Virtual Tours",
+      "tourDesc": "Immersive virtual tours allowing prospective students to explore the school",
+      "hunt": "Scavenger Hunt",
+      "huntDesc": "Interactive game-based exploration powered by FastAPI Python backend",
+      "ai": "AI Chat Assistant",
+      "aiDesc": "Intelligent chatbot helping students choose the right class profile",
+      "cms": "Dynamic Content",
+      "cmsDesc": "Strapi CMS backend for easy content management and updates"
+    },
+    "stats": {
+      "title": "Impact",
+      "visitors": "~1,000",
+      "visitorsLabel": "Visitors",
+      "visitorsDesc": "Students and parents explored the school offer through this platform"
+    },
+    "upcoming": {
+      "title": "Coming Soon",
+      "description": "Currently preparing for the next release with enhanced features including improved 360 tours, expanded scavenger hunt, and more powerful AI assistance."
+    },
+    "tech": {
+      "title": "Technology Stack"
+    },
+    "backToProjects": "Back to Projects"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Let's work together",
+    "description": "I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out!",
+    "email": "Email",
+    "social": "Social Links"
+  },
+  "footer": {
+    "copyright": "All rights reserved.",
+    "builtWith": "Built with"
+  },
+  "timeline": {
+    "phase1": {
+      "title": "Project Inception",
+      "date": "Month 1-2",
+      "description": "Initial concept development, market research, and requirements gathering. Defined core features and technical architecture."
+    },
+    "phase2": {
+      "title": "Backend Development",
+      "date": "Month 3-4",
+      "description": "Built the Python FastAPI server with MariaDB, Meilisearch, and Docker containerization for scalability."
+    },
+    "phase3": {
+      "title": "Flutter App Development",
+      "date": "Month 5-7",
+      "description": "Developed the cross-platform Flutter application for mobile and web with Google Sign-In integration."
+    },
+    "phase4": {
+      "title": "Data Integrations",
+      "date": "Month 8",
+      "description": "Integrated multiple data sources: Librus, Edupage, JakDojade, WolneLektury, and implemented push notifications."
+    },
+    "phase5": {
+      "title": "Launch & Recognition",
+      "date": "Month 9+",
+      "description": "Official release, user onboarding, and subsequent award recognition for the project."
+    }
+  }
+}

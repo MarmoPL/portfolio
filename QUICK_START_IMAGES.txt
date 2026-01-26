@@ -1,0 +1,142 @@
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                    QUICK START: ADDING IMAGES                            ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+1. FOLDER STRUCTURE (already created for you)
+   └─ public/images/
+      ├── profile/          ← Your profile photo
+      └── projects/
+          ├── marmo-edu/    ← Marmo EDU screenshots
+          ├── katalog/      ← LO IX Katalog screenshots
+          ├── wls/          ← WLS screenshot
+          └── discord-bot/  ← Discord bot screenshot
+
+2. STEP-BY-STEP
+
+   Step 1: Prepare Your Images
+   ─────────────────────────
+   ✓ Compress images (use TinyPNG.com or ImageOptim)
+   ✓ Recommended sizes:
+     - Profile: 400×400px (JPG, PNG, or WebP)
+     - Screenshots: 800×600px or 1200×800px
+
+   Step 2: Copy Images to Project
+   ───────────────────────────────
+   Run these commands (replace file paths with your images):
+
+     cp ~/Downloads/your-photo.jpg public/images/profile/avatar.jpg
+     cp ~/Downloads/marmo1.jpg public/images/projects/marmo-edu/screenshot-1.jpg
+     cp ~/Downloads/marmo2.jpg public/images/projects/marmo-edu/screenshot-2.jpg
+     cp ~/Downloads/marmo3.jpg public/images/projects/marmo-edu/screenshot-3.jpg
+     cp ~/Downloads/katalog1.jpg public/images/projects/katalog/screenshot-1.jpg
+
+   Step 3: Update Components (Edit these files)
+   ─────────────────────────────────────────────
+   
+   1. About Profile Photo:
+      File: src/components/sections/About.tsx
+      → Replace placeholder div with Image component
+      → Add: import Image from 'next/image';
+      → Update image src to: /images/profile/avatar.jpg
+
+   2. Project Cards:
+      File: src/components/sections/Projects.tsx
+      → Import Image component
+      → Add project image paths
+      → Update card image sections
+
+   3. Marmo EDU Page:
+      File: src/app/[locale]/projects/marmo-edu/MarmoEduContent.tsx
+      → Replace app mockup with Image component
+      → Update gallery with 3 screenshots
+
+   4. Katalog Page:
+      File: src/app/[locale]/projects/katalog/KatalogContent.tsx
+      → Replace website mockup with Image component
+
+   Step 4: Test
+   ────────────
+   rm -rf .next
+   npm run dev
+   
+   Visit: http://localhost:3000/en
+   → Check that all images load correctly
+
+   Step 5: Deploy
+   ──────────────
+   git add .
+   git commit -m "Add project images"
+   git push
+
+   Images automatically deploy to GitHub Pages!
+
+3. COMMON IMAGE PATHS
+
+   Profile:
+   /images/profile/avatar.jpg
+
+   Project cards:
+   /images/projects/marmo-edu/screenshot-1.jpg
+   /images/projects/katalog/screenshot-1.jpg
+   /images/projects/wls/screenshot-1.jpg
+   /images/projects/discord-bot/screenshot-1.jpg
+
+   Project page galleries:
+   /images/projects/marmo-edu/screenshot-1.jpg
+   /images/projects/marmo-edu/screenshot-2.jpg
+   /images/projects/marmo-edu/screenshot-3.jpg
+
+4. NEXT.JS IMAGE CODE TEMPLATE
+
+   // Import at top of file
+   import Image from 'next/image';
+
+   // Simple image
+   <Image
+     src="/images/profile/avatar.jpg"
+     alt="Marcin Czembrowski"
+     width={400}
+     height={400}
+     className="w-full h-full object-cover"
+     priority
+   />
+
+   // Fill parent container
+   <div className="relative w-full h-96">
+     <Image
+       src="/images/projects/marmo-edu/screenshot-1.jpg"
+       alt="Screenshot"
+       fill
+       className="object-cover"
+     />
+   </div>
+
+5. TROUBLESHOOTING
+
+   Images not showing?
+   ✓ Check file path (must start with /)
+   ✓ Verify file exists: ls public/images/
+   ✓ Clear cache: rm -rf .next
+
+   Build error?
+   ✓ Make sure Image is imported from 'next/image'
+   ✓ Check Image component has src and alt props
+   ✓ Verify width/height are set correctly
+
+6. FILE SIZE TARGETS
+
+   Profile photo:     100-200 KB
+   Screenshots:       200-500 KB each
+   Hero images:       500-1000 KB
+
+   Use TinyPNG to compress: https://tinypng.com
+
+7. MORE HELP
+
+   See IMAGES_GUIDE.md for detailed instructions
+   See IMAGES_CHECKLIST.md for complete checklist
+
+═══════════════════════════════════════════════════════════════════════════
+
+READY? Start by copying your images to public/images/ folders!
+

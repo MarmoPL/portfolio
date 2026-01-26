@@ -1,0 +1,205 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                     PORTFOLIO FILE STRUCTURE                              ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+YOUR PROJECT STRUCTURE
+══════════════════════
+
+portfolio/
+│
+├── public/                          ← Static files (images go here)
+│   └── images/                      ← ALL YOUR IMAGES GO HERE
+│       ├── profile/                 ← Your profile photo
+│       │   └── avatar.jpg           ← ADD: Your profile picture
+│       │
+│       └── projects/                ← Project screenshots
+│           ├── marmo-edu/           ← Marmo EDU app screenshots
+│           │   ├── screenshot-1.jpg ← ADD: First screenshot
+│           │   ├── screenshot-2.jpg ← ADD: Second screenshot
+│           │   └── screenshot-3.jpg ← ADD: Third screenshot
+│           │
+│           ├── katalog/             ← Katalog website screenshots
+│           │   ├── screenshot-1.jpg ← ADD: First screenshot
+│           │   ├── screenshot-2.jpg ← ADD: Second screenshot
+│           │   └── screenshot-3.jpg ← ADD: Third screenshot
+│           │
+│           ├── wls/                 ← WLS website screenshot
+│           │   └── screenshot-1.jpg ← ADD: Screenshot
+│           │
+│           └── discord-bot/         ← Discord bot screenshot
+│               └── screenshot-1.jpg ← ADD: Screenshot
+│
+├── src/                             ← Source code
+│   ├── app/                         ← Pages & routes
+│   │   ├── [locale]/                ← Language routes
+│   │   │   ├── page.tsx             ← Home page
+│   │   │   └── projects/
+│   │   │       ├── marmo-edu/       ← Marmo EDU detail page
+│   │   │       │   └── MarmoEduContent.tsx ← UPDATE THIS (add images)
+│   │   │       └── katalog/         ← Katalog detail page
+│   │   │           └── KatalogContent.tsx ← UPDATE THIS (add images)
+│   │   ├── layout.tsx               ← Root layout
+│   │   └── globals.css              ← Global styles
+│   │
+│   ├── components/                  ← React components
+│   │   ├── sections/
+│   │   │   ├── Hero.tsx
+│   │   │   ├── About.tsx            ← UPDATE THIS (profile image)
+│   │   │   ├── Projects.tsx         ← UPDATE THIS (project cards)
+│   │   │   ├── Skills.tsx
+│   │   │   └── Contact.tsx
+│   │   │
+│   │   ├── layout/
+│   │   │   ├── Navbar.tsx
+│   │   │   ├── Footer.tsx
+│   │   │   └── LanguageSwitcher.tsx
+│   │   │
+│   │   ├── projects/
+│   │   │   ├── Timeline.tsx
+│   │   │   └── AwardShowcase.tsx
+│   │   │
+│   │   └── ui/
+│   │       ├── AnimatedSection.tsx
+│   │       └── SectionTitle.tsx
+│   │
+│   ├── i18n/                        ← Translations
+│   │   ├── en.json                  ← English text
+│   │   ├── pl.json                  ← Polish text
+│   │   └── config.ts
+│   │
+│   └── lib/
+│       └── utils.ts
+│
+├── .github/
+│   └── workflows/
+│       └── deploy.yml               ← GitHub Actions deployment
+│
+├── Documentation Files              ← READ THESE!
+│   ├── README.md
+│   ├── IMAGE_SETUP_SUMMARY.md       ← START HERE!
+│   ├── QUICK_START_IMAGES.txt       ← Quick reference
+│   ├── IMAGES_GUIDE.md              ← Detailed guide
+│   ├── IMAGES_CHECKLIST.md          ← Step-by-step checklist
+│   └── FILE_STRUCTURE.txt           ← This file
+│
+├── package.json
+├── next.config.ts
+├── tsconfig.json
+└── tailwind.config.ts
+
+
+COMPONENT FILES YOU'LL UPDATE
+═════════════════════════════
+
+1. src/components/sections/About.tsx
+   ↓
+   Replace profile photo placeholder with actual image
+   Image path: /images/profile/avatar.jpg
+   
+2. src/components/sections/Projects.tsx
+   ↓
+   Add project card images
+   Image paths:
+   - /images/projects/marmo-edu/screenshot-1.jpg
+   - /images/projects/katalog/screenshot-1.jpg
+   - /images/projects/wls/screenshot-1.jpg
+   - /images/projects/discord-bot/screenshot-1.jpg
+
+3. src/app/[locale]/projects/marmo-edu/MarmoEduContent.tsx
+   ↓
+   Replace app mockup with actual screenshot
+   Add gallery with 3 screenshots
+   Image paths:
+   - /images/projects/marmo-edu/screenshot-1.jpg
+   - /images/projects/marmo-edu/screenshot-2.jpg
+   - /images/projects/marmo-edu/screenshot-3.jpg
+
+4. src/app/[locale]/projects/katalog/KatalogContent.tsx
+   ↓
+   Replace website mockup with actual screenshot
+   Image path: /images/projects/katalog/screenshot-1.jpg
+
+
+IMAGE FILE NAMING
+═════════════════
+
+Profile:
+  public/images/profile/avatar.jpg
+
+Marmo EDU:
+  public/images/projects/marmo-edu/screenshot-1.jpg
+  public/images/projects/marmo-edu/screenshot-2.jpg
+  public/images/projects/marmo-edu/screenshot-3.jpg
+
+Katalog:
+  public/images/projects/katalog/screenshot-1.jpg
+  public/images/projects/katalog/screenshot-2.jpg
+  public/images/projects/katalog/screenshot-3.jpg
+
+WLS (optional):
+  public/images/projects/wls/screenshot-1.jpg
+
+Discord Bot (optional):
+  public/images/projects/discord-bot/screenshot-1.jpg
+
+
+QUICK COMMANDS
+══════════════
+
+Copy images (example):
+  cp ~/Downloads/my-photo.jpg public/images/profile/avatar.jpg
+  cp ~/Downloads/marmo1.jpg public/images/projects/marmo-edu/screenshot-1.jpg
+
+Check what's in image folders:
+  ls -la public/images/
+  ls -la public/images/profile/
+  ls -la public/images/projects/marmo-edu/
+
+Test locally:
+  npm run dev
+  Visit: http://localhost:3000/en
+
+Deploy:
+  git add public/images/
+  git commit -m "Add project images"
+  git push
+
+
+IMAGE SIZES (COMPRESSED)
+════════════════════════
+
+Profile photo:
+  Dimensions: 400×400px (square)
+  Compressed size: 100-200 KB
+  Formats: JPG, PNG, or WebP
+
+Screenshots:
+  Dimensions: 800×600px (landscape) or 1200×800px (wider)
+  Compressed size: 200-500 KB each
+  Formats: JPG, PNG, or WebP
+
+Mobile app screenshots:
+  Dimensions: 400×600px (portrait)
+  Compressed size: 200-400 KB
+  Formats: JPG, PNG, or WebP
+
+Compress at: https://tinypng.com
+
+
+NEXT STEPS
+══════════
+
+1. Read: IMAGE_SETUP_SUMMARY.md (this explains everything!)
+2. Gather your images
+3. Compress at tinypng.com
+4. Copy images to public/images/ folders
+5. Update the 4 component files listed above
+6. Test with: npm run dev
+7. Deploy with: git push
+8. See them live!
+
+
+═════════════════════════════════════════════════════════════════════════════
+
+For detailed instructions with code examples, see: IMAGES_GUIDE.md
+For checklist to follow, see: IMAGES_CHECKLIST.md
