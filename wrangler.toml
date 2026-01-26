@@ -3,5 +3,5 @@ name = "portfolio"
 compatibility_date = "2024-01-01"
 compatibility_flags = ["nodejs_compat"]
 
-[vars]
-# Add any environment variables here if needed
+# Required: specify the output directory for static export
+pages_build_output_dir = "out"
