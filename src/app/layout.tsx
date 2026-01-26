@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Marcin Czembrowski | Full-Stack Developer",
   description: "Portfolio of Marcin Czembrowski (Marmo) - Full-Stack Developer specializing in web and mobile applications.",
-  keywords: ["developer", "full-stack", "React", "Next.js", "TypeScript", "mobile", "web development"],
+  keywords: ["developer", "full-stack", "Vue.js", "Vuetify", "Strapi", "Python", "Flutter", "Docker", "mobile", "web development"],
   authors: [{ name: "Marcin Czembrowski" }],
   openGraph: {
     title: "Marcin Czembrowski | Full-Stack Developer",

@@ -23,10 +23,10 @@ const techStack = [
 ];
 
 const integrations = [
-  'Librus',
-  'Edupage',
-  'JakDojade',
-  'WolneLektury',
+  { name: 'Librus', icon: '/images/projects/marmo-edu/icons/librus.png' },
+  { name: 'Edupage', icon: '/images/projects/marmo-edu/icons/edupage.png' },
+  { name: 'JakDojade', icon: '/images/projects/marmo-edu/icons/jakdojade.png' },
+  { name: 'WolneLektury', icon: '/images/projects/marmo-edu/icons/wolnelektury.png' },
 ];
 
 const features = [
@@ -155,7 +155,7 @@ export default function MarmoEduContent() {
           >
             {integrations.map((integration, index) => (
               <motion.div
-                key={integration}
+                key={integration.name}
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
@@ -163,8 +163,15 @@ export default function MarmoEduContent() {
                 whileHover={{ scale: 1.05 }}
                 className="px-6 py-4 bg-card border border-border rounded-2xl text-center hover:border-primary/50 transition-colors"
               >
-                <Link2 className="w-8 h-8 text-primary mx-auto mb-2" />
-                <span className="text-sm font-medium">{integration}</span>
+                <div className="w-12 h-12 relative mx-auto mb-3">
+                  <Image
+                    src={integration.icon}
+                    alt={integration.name}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+                <span className="text-sm font-medium">{integration.name}</span>
               </motion.div>
             ))}
           </motion.div>

@@ -7,14 +7,11 @@ import Link from 'next/link';
 import SectionTitle from '@/components/ui/SectionTitle';
 
 const techStack = [
-  'Next.js',
-  'TypeScript',
-  'Three.js',
+  'Vue.js',
+  'Vuetify',
   'Strapi CMS',
-  'FastAPI',
   'Python',
   'OpenAI',
-  'Tailwind CSS',
 ];
 
 const features = [

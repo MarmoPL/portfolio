@@ -9,19 +9,19 @@ const socialLinks = [
   {
     name: 'GitHub',
     icon: Github,
-    url: 'https://github.com/marmo',
+    url: 'https://github.com/MarmoPL',
     color: 'hover:text-white',
   },
   {
     name: 'LinkedIn',
     icon: Linkedin,
-    url: 'https://linkedin.com/in/marmo',
+    url: 'https://linkedin.com/in/mczembrowski',
     color: 'hover:text-[#0A66C2]',
   },
   {
     name: 'Email',
     icon: Mail,
-    url: 'mailto:contact@marmo.dev',
+    url: 'mailto:marcin@czembrowski.pl',
     color: 'hover:text-primary',
   },
 ];
@@ -46,13 +46,13 @@ export default function Contact() {
 
           {/* Email CTA */}
           <motion.a
-            href="mailto:contact@marmo.dev"
+            href="mailto:marcin@czembrowski.pl"
             className="inline-flex items-center gap-3 px-8 py-4 bg-primary hover:bg-primary-dark text-background font-medium rounded-full transition-all duration-300 glow-hover mb-12"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
             <Send className="w-5 h-5" />
-            contact@marmo.dev
+            marcin@czembrowski.pl
           </motion.a>
 
           {/* Social Links */}

@@ -1,6 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { MapPin, Briefcase, GraduationCap } from 'lucide-react';
 import SectionTitle from '../ui/SectionTitle';
@@ -24,14 +25,14 @@ export default function About() {
           {/* Profile Image Placeholder */}
           <AnimatedSection>
             <div className="relative">
-              <div className="aspect-square max-w-md mx-auto rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 border border-border overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-32 h-32 mx-auto rounded-full bg-primary/20 flex items-center justify-center mb-4">
-                      <span className="text-5xl font-bold gradient-text">MC</span>
-                    </div>
-                    <p className="text-muted text-sm">Profile Image</p>
-                  </div>
+              <div className="aspect-square max-w-md mx-auto rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 border border-border overflow-hidden relative flex items-center justify-center">
+                <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-primary/20 shadow-xl shadow-primary/10">
+                  <Image
+                    src="/images/personal/profile.png"
+                    alt="Marcin Czembrowski"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
               </div>
               {/* Decorative elements */}

@@ -11,7 +11,7 @@
     "name": "Marcin Czembrowski",
     "nickname": "Marmo",
     "role": "Full-Stack Developer",
-    "description": "I build modern web and mobile applications with passion for clean code and great user experiences.",
+    "description": "I build modern web and mobile applications with passion for great user experiences.",
     "cta": "View My Work",
     "contact": "Get in Touch"
   },
@@ -19,7 +19,7 @@
     "title": "About Me",
     "subtitle": "Get to know me better",
     "description": "I'm a passionate developer from Wroclaw, Poland, with experience in building full-stack applications. From mobile apps to complex web systems, I enjoy tackling challenging problems and creating solutions that make a difference.",
-    "paragraph2": "My journey in programming started with curiosity and has evolved into a deep commitment to continuous learning. I specialize in React, TypeScript, Node.js, and mobile development, always staying up-to-date with the latest technologies."
+    "paragraph2": "My journey in programming started with curiosity and has evolved into a deep commitment to continuous learning. I specialize in Flutter, Python, and mobile development, always staying up-to-date with the latest technologies."
   },
   "skills": {
     "title": "Skills & Technologies",
@@ -52,7 +52,7 @@
     },
     "katalog": {
       "title": "LO IX Katalog",
-      "shortDesc": "Interactive school catalog with 360 tours, scavenger hunt, and AI chat. Nearly 1,000 visitors!",
+      "shortDesc": "Interactive school catalog with 360 tours, scavenger hunt, and AI chat. Over 7,000 visits!",
       "description": "Next-generation school presentation platform featuring virtual tours, interactive exploration, and AI-powered guidance for prospective students."
     },
     "discordBot": {
@@ -89,10 +89,10 @@
       "integrationsDesc": "Connected to Librus, Edupage, JakDojade, WolneLektury and more"
     },
     "award": {
-      "title": "Award Recognition",
-      "subtitle": "Recognized for excellence in educational technology",
-      "description": "Marmo EDU has been honored for its innovative approach to educational software, demonstrating the impact of thoughtful design and technical excellence.",
-      "placeholder": "Award details coming soon"
+      "title": "1st Place",
+      "subtitle": "XXXII Kalisz IT Competition",
+      "description": "The project was recognized for its programming complexity, graphic design, and future development potential. The committee awarded the main prize in the secondary schools category.",
+      "placeholder": "Secondary Schools Category"
     },
     "tech": {
       "title": "Technology Stack"
@@ -110,7 +110,7 @@
     },
     "overview": {
       "title": "Project Overview",
-      "description": "LO IX Katalog is an interactive web platform designed to showcase the educational offerings of one of Wroclaw's top high schools. The platform features immersive 360-degree virtual tours, an engaging scavenger hunt game, and AI-powered chat assistance to help students choose the right class profile. According to visit statistics, nearly 1,000 visitors have used the platform to learn about the school's offer."
+      "description": "LO IX Katalog is an interactive web platform designed to showcase the educational offerings of one of Wroclaw's top high schools. The platform features immersive 360-degree virtual tours, an engaging scavenger hunt game, and AI-powered chat assistance to help students choose the right class profile. Over 7,000 visits demonstrate the platform's effectiveness in reaching prospective students and their parents."
     },
     "features": {
       "title": "Key Features",
@@ -125,13 +125,13 @@
     },
     "stats": {
       "title": "Impact",
-      "visitors": "~1,000",
-      "visitorsLabel": "Visitors",
+      "visitors": ">7000",
+      "visitorsLabel": "Visits",
       "visitorsDesc": "Students and parents explored the school offer through this platform"
     },
     "upcoming": {
       "title": "Coming Soon",
-      "description": "Currently preparing for the next release with enhanced features including improved 360 tours, expanded scavenger hunt, and more powerful AI assistance."
+      "description": "Currently preparing for the next release with enhanced features including 360 tours, scavenger hunt, and powerful AI assistance."
     },
     "tech": {
       "title": "Technology Stack"

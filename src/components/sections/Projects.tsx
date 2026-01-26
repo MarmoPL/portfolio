@@ -1,6 +1,7 @@
 'use client';
 
 import { useTranslations, useLocale } from 'next-intl';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { ExternalLink, ArrowRight, Award, Archive, Clock, CheckCircle } from 'lucide-react';
 import SectionTitle from '../ui/SectionTitle';
@@ -14,6 +15,7 @@ interface Project {
   link?: string;
   hasDetailPage?: boolean;
   featured?: boolean;
+  image?: string;
 }
 
 const projects: Project[] = [
@@ -24,20 +26,23 @@ const projects: Project[] = [
     tech: ['Flutter', 'Python', 'FastAPI', 'MariaDB', 'Docker'],
     hasDetailPage: true,
     featured: true,
+    image: '/images/projects/marmo-edu/marmoedu-main.png',
   },
   {
     id: 'katalog',
     translationKey: 'katalog',
     status: 'inProgress',
-    tech: ['Next.js', 'Strapi', 'FastAPI', 'Three.js'],
+    tech: ['Vue.js', 'Vuetify', 'Strapi', 'FastAPI'],
     hasDetailPage: true,
     featured: true,
+    image: '/images/projects/katalog-lo9/klo9-main.png',
   },
   {
     id: 'wls',
     translationKey: 'wls',
     status: 'archived',
     tech: ['Vue', 'Vuetify', 'Directus', 'Auth0'],
+    image: '/images/projects/wls/wls-main.png',
   },
   {
     id: 'discord-bot',
@@ -83,15 +88,23 @@ export default function Projects() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className={`group relative bg-card rounded-2xl border border-border overflow-hidden transition-all duration-300 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/5 ${
-                  isFeatured ? 'md:col-span-2' : ''
-                }`}
+                className={`group relative bg-card rounded-2xl border border-border overflow-hidden transition-all duration-300 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/5 ${isFeatured ? 'md:col-span-2' : ''
+                  }`}
               >
-                {/* Project Image Placeholder */}
-                <div className={`relative ${isFeatured ? 'h-64' : 'h-48'} bg-gradient-to-br from-primary/10 to-primary/5`}>
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <span className="text-muted text-sm">Project Screenshot</span>
-                  </div>
+                {/* Project Image Placeholder or Image */}
+                <div className={`relative ${isFeatured ? 'h-64' : 'h-48'} bg-gradient-to-br from-primary/10 to-primary/5 overflow-hidden`}>
+                  {project.image ? (
+                    <Image
+                      src={project.image}
+                      alt={t(`${project.translationKey}.title`)}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                  ) : (
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <span className="text-muted text-sm">Project Screenshot</span>
+                    </div>
+                  )}
                   {/* Status Badge */}
                   <div className={`absolute top-4 right-4 flex items-center gap-2 px-3 py-1.5 rounded-full ${statusConfig[project.status].bg}`}>
                     <StatusIcon className={`w-4 h-4 ${statusConfig[project.status].color}`} />

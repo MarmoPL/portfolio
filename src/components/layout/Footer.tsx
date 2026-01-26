@@ -27,7 +27,7 @@ export default function Footer() {
             viewport={{ once: true }}
             className="flex items-center gap-2 text-sm text-muted"
           >
-            {t('builtWith')} <Heart className="w-4 h-4 text-primary fill-primary" /> Next.js & Tailwind
+            {t('builtWith')} <Heart className="w-4 h-4 text-primary fill-primary" /> Vue.js & Vuetify
           </motion.div>
         </div>
       </div>

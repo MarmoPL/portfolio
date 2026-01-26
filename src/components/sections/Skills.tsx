@@ -8,10 +8,9 @@ const skillCategories = [
   {
     key: 'frontend',
     skills: [
-      { name: 'React', color: '#61DAFB' },
-      { name: 'Next.js', color: '#ffffff' },
-      { name: 'TypeScript', color: '#3178C6' },
-      { name: 'Tailwind CSS', color: '#06B6D4' },
+      { name: 'Vue.js', color: '#4FC08D' },
+      { name: 'Nuxt.js', color: '#4FC08D' },
+      { name: 'Vuetify', color: '#4FC08D' },
       { name: 'HTML/CSS', color: '#E34F26' },
       { name: 'JavaScript', color: '#F7DF1E' },
     ],
@@ -19,20 +18,24 @@ const skillCategories = [
   {
     key: 'backend',
     skills: [
-      { name: 'Node.js', color: '#339933' },
-      { name: 'Express', color: '#ffffff' },
       { name: 'Python', color: '#3776AB' },
       { name: 'PostgreSQL', color: '#4169E1' },
       { name: 'MongoDB', color: '#47A248' },
+      { name: 'FastAPI', color: '#009688' },
+      { name: 'SQLAlchemy', color: '#009688' },
+      { name: 'Docker', color: '#2496ED' },
+      { name: 'Redis', color: '#2496ED' },
+      { name: 'WebSockets', color: '#2496ED' },
       { name: 'REST APIs', color: '#FF6B6B' },
     ],
   },
   {
     key: 'mobile',
     skills: [
-      { name: 'React Native', color: '#61DAFB' },
-      { name: 'Expo', color: '#000020' },
       { name: 'Flutter', color: '#02569B' },
+      { name: 'Dart', color: '#02569B' },
+      { name: 'Kotlin', color: '#02569B' },
+      { name: 'Android', color: '#02569B' },
     ],
   },
   {
