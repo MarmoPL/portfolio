@@ -10,6 +10,9 @@ const nextConfig: NextConfig = {
   },
   basePath: process.env.NODE_ENV === 'production' ? '/portfolio' : '',
   trailingSlash: true,
+  turbopack: {
+    root: '.',
+  },
 };
 
 export default withNextIntl(nextConfig);
