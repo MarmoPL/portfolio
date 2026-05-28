@@ -11,15 +11,15 @@
     "name": "Marcin Czembrowski",
     "nickname": "Marmo",
     "role": "Full-Stack Developer",
-    "description": "I build modern web and mobile applications with passion for great user experiences.",
+    "description": "I build modern web and mobile applications accommodating AI for great user experiences.",
     "cta": "View My Work",
     "contact": "Get in Touch"
   },
   "about": {
     "title": "About Me",
     "subtitle": "Get to know me better",
-    "description": "I'm a passionate developer from Wroclaw, Poland, with experience in building full-stack applications. From mobile apps to complex web systems, I enjoy tackling challenging problems and creating solutions that make a difference.",
-    "paragraph2": "My journey in programming started with curiosity and has evolved into a deep commitment to continuous learning. I specialize in Flutter, Python, and mobile development, always staying up-to-date with the latest technologies."
+    "description": "I'm a passionate developer from Wroclaw, Poland, with experience in building full-stack applications. From mobile apps to complex web systems, I enjoy tackling challenging problems and creating solutions that make a difference. I leverage the current state of AI to upgrade user experience and create innovative features. I'm always eager to learn new technologies and collaborate on exciting projects.",
+    "paragraph2": "My journey in programming started with curiosity and has evolved into a deep commitment to continuous learning. I specialize in Flutter, Python, mobile development, and now also in Artificial Inteligence. Im always discovering new tools and technologies to enhance my skills and deliver even better results."
   },
   "skills": {
     "title": "Skills & Technologies",
@@ -40,6 +40,11 @@
       "archived": "Archived",
       "awardWinner": "Award Winner"
     },
+    "grobownik": {
+      "title": "Grobownik",
+      "shortDesc": "Interactive mapping and search application for locating graves of deceased university professors on All Saints' Day.",
+      "description": "A mobile application developed for KN Solvro in cooperation with the PWr Alumni Association. It replaces paper maps with interactive GPS locating, offline mapping support, and professor biographies."
+    },
     "marmoEdu": {
       "title": "Marmo EDU",
       "shortDesc": "Award-winning Flutter mobile & web app with Python backend, integrating multiple educational data sources.",
@@ -54,6 +59,36 @@
       "title": "LO IX Katalog",
       "shortDesc": "Interactive school catalog with 360 tours, scavenger hunt, and AI chat. Over 7,000 visits!",
       "description": "Next-generation school presentation platform featuring virtual tours, interactive exploration, and AI-powered guidance for prospective students."
+    },
+    "marmoCar": {
+      "title": "Marmo Car",
+      "shortDesc": "Automated driving exam monitor and reservation system with Flutter mobile app, Firebase back-end and instant notifications.",
+      "description": "Comprehensive platform to automate tracking of driving exam slots on Polish portals. Uses Cloud Functions, Stripe, and Google Cloud solutions for seamless and always availabile service."
+    },
+    "trainy": {
+      "title": "Trainy Suite",
+      "shortDesc": "Real-time multi-service train tracking and delay prediction suite for Polish rail companies.",
+      "description": "A comprehensive train tracking ecosystem including static GTFS ingestion, WebSocket live feeds, and an authenticated mobile experience (Flutter, Riverpod) with foreground notification support."
+    },
+    "langnews": {
+      "title": "LangNews",
+      "shortDesc": "Mobile-first PWA for learning Hungarian, French and Italian through real news articles fetched daily, powered by AI on every step.",
+      "description": "Language-learning platform integrating authentic news reading, Mistral AI contextual tutoring, and SM-2 spaced-repetition vocabulary reviews."
+    },
+    "zaIlePaliwo": {
+      "title": "ZaIlePaliwo",
+      "shortDesc": "Crowdsourced fuel price map in Poland with AI OCR photo price extraction and automated social scraping.",
+      "description": "React webapp with interactive MapLibre maps and a FastAPI backend. Scrapes Facebook groups and uses Mistral AI vision model to extract gas prices from user-submitted photos."
+    },
+    "medicoverMcp": {
+      "title": "Medicover MCP Server",
+      "shortDesc": "Model Context Protocol server for Medicover, deployed on Cloudflare Workers.",
+      "description": "A secure Cloudflare Worker implementing the MCP specification to let AI search and book medical appointments. Features OIDC auth with Authentik, KV session storage, and AES-256-GCM encryption."
+    },
+    "pitCalculator": {
+      "title": "PIT Tax Calculator",
+      "shortDesc": "Interactive Polish tax calculator built with Streamlit, parsing brokerage statements and fetching NBP rates.",
+      "description": "A Streamlit data application that parses investment reports (CSV/PDF) and applies Polish National Bank (NBP) historical exchange rates for capital gains calculations."
     },
     "discordBot": {
       "title": "School Helper Bot",
