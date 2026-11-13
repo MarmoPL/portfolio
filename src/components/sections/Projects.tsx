@@ -26,13 +26,13 @@ const projects: Project[] = [
   {
     id: 'grobownik',
     translationKey: 'grobownik',
-    status: 'inProgress',
+    status: 'completed',
     tech: ['Flutter', 'Dart', 'Riverpod', 'Mapbox', 'Directus', 'PostgreSQL', 'Docker'],
     featured: true,
     icon: Map,
     organization: 'KN Solvro',
     role: 'Project Manager',
-    // image: '/images/projects/grobownik/grobownik-main.png', // Uncomment when screenshot is added
+    image: '/images/projects/grobownik/grobownik-main.jpg',
   },
   {
     id: 'marmo-edu',
@@ -167,8 +167,8 @@ export default function Projects() {
                               {project.role}
                             </span>
                           )}
-                          <span className="px-2.5 py-0.5 text-[10px] font-bold tracking-wider uppercase bg-yellow-500/10 text-yellow-500 rounded-full flex items-center gap-1.5">
-                            <Clock className="w-3.5 h-3.5" />
+                          <span className={`px-2.5 py-0.5 text-[10px] font-bold tracking-wider uppercase rounded-full flex items-center gap-1.5 ${statusConfig[project.status].bg} ${statusConfig[project.status].color}`}>
+                            <StatusIcon className="w-3.5 h-3.5" />
                             {t(`status.${project.status}`)}
                           </span>
                         </div>
@@ -180,8 +180,25 @@ export default function Projects() {
                       <div className="space-y-2">
                         <span className="text-[11px] font-bold text-primary uppercase tracking-wider block">Project Goal</span>
                         <p className="text-sm text-foreground/80 leading-relaxed">
-                          A mobile application designed to help volunteers quickly locate and map graves of deceased university professors on All Saints' Day, replacing traditional paper maps and handwritten lists.
+                          A mobile app built at KN Solvro with NZS PWr and the PWr Alumni Association. It helped volunteers find the graves of late Wrocław University of Science and Technology professors before All Saints&apos; Day and keep their records up to date, replacing paper maps and handwritten lists.
                         </p>
+                      </div>
+
+                      <div className="space-y-2">
+                        <span className="text-[11px] font-bold text-primary uppercase tracking-wider block">Results</span>
+                        <div className="grid grid-cols-2 gap-3">
+                          {[
+                            { value: '359', label: 'graves mapped' },
+                            { value: '4+', label: 'cemeteries' },
+                            { value: '225', label: 'visits logged' },
+                            { value: '163', label: 'photos & updates' },
+                          ].map((stat) => (
+                            <div key={stat.label} className="rounded-xl border border-border bg-background/60 px-4 py-3">
+                              <div className="text-2xl font-extrabold text-primary leading-none">{stat.value}</div>
+                              <div className="text-xs text-muted-foreground mt-1">{stat.label}</div>
+                            </div>
+                          ))}
+                        </div>
                       </div>
 
                       <div className="space-y-2">
@@ -199,8 +216,23 @@ export default function Projects() {
                       </div>
                     </div>
 
-                    {/* Right Column: Features & Timeline */}
+                    {/* Right Column: Mockup, Features & Timeline */}
                     <div className="space-y-6">
+                      {project.image && (
+                        <div
+                          className="relative w-full aspect-[4/3] rounded-xl overflow-hidden border border-border bg-[#0a1315] cursor-pointer"
+                          onClick={() => setActiveLightboxImage(project.image!)}
+                        >
+                          <Image
+                            src={project.image}
+                            alt="Grobownik app showing a cemetery map with grave markers and name search"
+                            fill
+                            sizes="(max-width: 768px) 100vw, 50vw"
+                            className="object-cover transition-transform duration-500 group-hover:scale-105"
+                          />
+                        </div>
+                      )}
+
                       <div className="space-y-2">
                         <span className="text-[11px] font-bold text-primary uppercase tracking-wider block">Core Features (MVP)</span>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-muted-foreground">
@@ -246,20 +278,22 @@ export default function Projects() {
                           </div>
                           {/* Step 2 */}
                           <div className="flex items-start gap-4 relative">
-                            <div className="w-4 h-4 rounded-full border-4 border-background bg-primary flex items-center justify-center z-10 mt-0.5">
-                              <span className="w-1.5 h-1.5 bg-background rounded-full animate-ping" />
+                            <div className="w-4 h-4 rounded-full border-4 border-background bg-emerald-500 flex items-center justify-center text-[7px] text-white font-bold z-10 mt-0.5">
+                              ✓
                             </div>
                             <div>
-                              <div className="text-xs font-semibold text-primary">July-Aug 2026 — MVP Development</div>
+                              <div className="text-xs font-semibold text-emerald-500">July-Aug 2026 — MVP Development</div>
                               <p className="text-[10px] text-muted-foreground">Backend API implementation & core mobile screens mapping.</p>
                             </div>
                           </div>
                           {/* Step 3 */}
                           <div className="flex items-start gap-4 relative">
-                            <div className="w-4 h-4 rounded-full border-4 border-background bg-muted flex items-center justify-center z-10 mt-0.5" />
+                            <div className="w-4 h-4 rounded-full border-4 border-background bg-emerald-500 flex items-center justify-center text-[7px] text-white font-bold z-10 mt-0.5">
+                              ✓
+                            </div>
                             <div>
-                              <div className="text-xs font-semibold text-muted-foreground">Oct 2026 — Production Release</div>
-                              <p className="text-[10px] text-muted-foreground">Final field-testing & launch for the All Saints' Day campaign.</p>
+                              <div className="text-xs font-semibold text-emerald-500">1 Nov 2026 — Shipped on deadline</div>
+                              <p className="text-[10px] text-muted-foreground">Used by volunteers in the field throughout the All Saints&apos; Day campaign.</p>
                             </div>
                           </div>
                         </div>
@@ -269,7 +303,7 @@ export default function Projects() {
 
                   <div className="mt-6 pt-4 border-t border-border/60 text-xs text-muted-foreground italic flex items-center gap-1.5">
                     <Map className="w-4 h-4 text-primary" />
-                    Project Manager driving team development and deployment coordinates.
+                    As Project Manager, I coordinated a team with overlapping tasks through the summer break and delivered on time.
                   </div>
                 </motion.div>
               );

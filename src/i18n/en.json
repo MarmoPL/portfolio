@@ -42,8 +42,8 @@
     },
     "grobownik": {
       "title": "Grobownik",
-      "shortDesc": "Interactive mapping and search application for locating graves of deceased university professors on All Saints' Day.",
-      "description": "A mobile application developed for KN Solvro in cooperation with the PWr Alumni Association. It replaces paper maps with interactive GPS locating, offline mapping support, and professor biographies."
+      "shortDesc": "Flutter app that helped volunteers find and document graves of late PWr professors: 359 graves across 4+ cemeteries, 225 visits logged.",
+      "description": "A mobile app built at KN Solvro with NZS PWr and the PWr Alumni Association. Volunteers used it to locate professors' graves, register visits and add 163 new photos and updates ahead of All Saints' Day 2026."
     },
     "marmoEdu": {
       "title": "Marmo EDU",
