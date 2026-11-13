@@ -100,3 +100,45 @@ body {
 .glow-hover:hover {
   box-shadow: 0 0 30px rgba(249, 115, 22, 0.4);
 }
+
+/* Spotty project page: the app's own brand (violet + pink, Bricolage Grotesque + Figtree),
+   scoped so the rest of the portfolio keeps its orange theme. */
+.spotty {
+  --background: #0e0d14;
+  --primary: #a98bff;
+  --primary-light: #bba4ff;
+  --primary-dark: #6c3bea;
+  --card: #17151f;
+  --card-hover: #201d2b;
+  --border: #2b2838;
+  --muted: #9a97a8;
+  --spotty-violet: #6c3bea;
+  --spotty-pink: #e8458b;
+  --spotty-pink-light: #f7a8cb;
+  --spotty-plum: #1b1230;
+  --font-bricolage: 'Bricolage Grotesque Variable';
+  --font-figtree: 'Figtree Variable';
+  background: var(--background);
+  font-family: var(--font-figtree), system-ui, sans-serif;
+}
+
+.spotty h1,
+.spotty h2,
+.spotty h3,
+.spotty .font-display {
+  font-family: var(--font-bricolage), var(--font-figtree), system-ui, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.spotty .spotty-gradient-text {
+  background: linear-gradient(120deg, #bba4ff 0%, #e8458b 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.spotty .spotty-glow {
+  background:
+    radial-gradient(60% 60% at 20% 20%, rgba(108, 59, 234, 0.35) 0%, rgba(108, 59, 234, 0) 70%),
+    radial-gradient(50% 50% at 85% 30%, rgba(232, 69, 139, 0.22) 0%, rgba(232, 69, 139, 0) 70%);
+}

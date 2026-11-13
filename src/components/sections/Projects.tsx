@@ -4,14 +4,14 @@ import { useState } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { ExternalLink, ArrowRight, Award, Archive, Clock, CheckCircle, MessageSquare, Server, MessageCircle, X, Map, Fuel } from 'lucide-react';
+import { ExternalLink, ArrowRight, Award, Archive, Clock, CheckCircle, MessageSquare, Server, MessageCircle, X, Map, Fuel, Radio } from 'lucide-react';
 import SectionTitle from '../ui/SectionTitle';
 import Link from 'next/link';
 
 interface Project {
   id: string;
   translationKey: string;
-  status: 'completed' | 'inProgress' | 'archived' | 'awardWinner';
+  status: 'live' | 'completed' | 'inProgress' | 'archived' | 'awardWinner';
   tech: string[];
   link?: string;
   hasDetailPage?: boolean;
@@ -23,6 +23,17 @@ interface Project {
 }
 
 const projects: Project[] = [
+  {
+    id: 'spotty',
+    translationKey: 'spotty',
+    status: 'live',
+    tech: ['Flutter', 'Supabase', 'PostgreSQL', 'Strapi 5', 'Cloudflare Workers', 'Mistral AI', 'Passkeys'],
+    hasDetailPage: true,
+    featured: true,
+    organization: 'Projekt Unity',
+    role: 'CTO · Lead Developer',
+    image: '/images/projects/spotty/spotty-main.jpg',
+  },
   {
     id: 'grobownik',
     translationKey: 'grobownik',
@@ -113,6 +124,7 @@ const projects: Project[] = [
 ];
 
 const statusConfig = {
+  live: { icon: Radio, color: 'text-green-500', bg: 'bg-green-500/10' },
   completed: { icon: CheckCircle, color: 'text-green-500', bg: 'bg-green-500/10' },
   inProgress: { icon: Clock, color: 'text-yellow-500', bg: 'bg-yellow-500/10' },
   archived: { icon: Archive, color: 'text-gray-500', bg: 'bg-gray-500/10' },

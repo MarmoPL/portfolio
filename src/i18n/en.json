@@ -38,7 +38,8 @@
       "completed": "Completed",
       "inProgress": "In Progress",
       "archived": "Archived",
-      "awardWinner": "Award Winner"
+      "awardWinner": "Award Winner",
+      "live": "Live"
     },
     "grobownik": {
       "title": "Grobownik",
@@ -100,6 +101,11 @@
       "working": "working on the",
       "project": "mobile app project",
       "learnMore": "Learn more about Solvro"
+    },
+    "spotty": {
+      "title": "Spotty",
+      "shortDesc": "The student app for Wrocław high schools, built on my white-label Schooly platform for Projekt Unity. Around 500 student accounts, 250+ active each month.",
+      "description": "A Flutter app for Android, iOS and the web that brings timetables, substitutions, partner discounts, the school library, food and merch into one place, run by students for students."
     }
   },
   "marmoEduPage": {
@@ -215,6 +221,315 @@
       "title": "Launch & Recognition",
       "date": "Month 9+",
       "description": "Official release, user onboarding, and subsequent award recognition for the project."
+    }
+  },
+  "spottyPage": {
+    "backToProjects": "Back to Projects",
+    "hero": {
+      "eyebrow": "Built on Schooly · Part of Projekt Unity",
+      "title": "Spotty",
+      "subtitle": "One app for student life, for every school that joins.",
+      "description": "Spotty puts a student's whole school day in one place: timetable and substitutions, news, a QR student card for partner discounts, the school library, lunch and merch. It runs on Schooly, a white-label platform I designed so any school can launch its own instance without starting from scratch.",
+      "role": "Creator & lead developer · CTO of Projekt Unity",
+      "website": "spotty.marmo.uk",
+      "unity": "projekt-unity.pl",
+      "platforms": [
+        "Android",
+        "iOS",
+        "Web & PWA"
+      ]
+    },
+    "stats": {
+      "title": "In numbers",
+      "note": "Live production data, November 2026.",
+      "items": [
+        {
+          "value": "~500",
+          "label": "student accounts"
+        },
+        {
+          "value": "250+",
+          "label": "active in the last 30 days"
+        },
+        {
+          "value": "170+",
+          "label": "sign in with a passkey"
+        },
+        {
+          "value": "14k",
+          "label": "library records indexed"
+        }
+      ]
+    },
+    "problem": {
+      "eyebrow": "Why",
+      "title": "Every school was solving the same problems alone.",
+      "description": "School life is spread across class chats, Instagram stories, a substitutions board, a library catalogue and posters on the corridor wall. Student councils in every school build their own fixes, and a good idea rarely travels to the next one. Spotty gives students one app, and Schooly lets the next school reuse everything the first one built.",
+      "points": [
+        {
+          "title": "One place",
+          "text": "Timetable, substitutions, news, discounts, library, food and merch in a single app."
+        },
+        {
+          "title": "Run by students",
+          "text": "Student councils publish content themselves through the Schooly CMS, with no developer in the loop."
+        },
+        {
+          "title": "Built to be shared",
+          "text": "Each school is an instance of the same platform: its own content, branding and modules."
+        }
+      ]
+    },
+    "features": {
+      "eyebrow": "Feature tour",
+      "title": "A whole school day in one app",
+      "items": [
+        {
+          "key": "home",
+          "title": "Everything at a glance",
+          "text": "The home screen greets you with today's lessons, the latest news and widgets for the things you use most. Students choose which sections appear and in what order.",
+          "bullets": [
+            "Rearrangeable home widgets",
+            "News from the student council",
+            "Light and dark mode"
+          ]
+        },
+        {
+          "key": "card",
+          "title": "Student card & partner perks",
+          "text": "A QR student card lives in the wallet next to local partners: cafés, restaurants and shops that offer discounts. Partners can run loyalty programmes with stamps and rewards collected at the till.",
+          "bullets": [
+            "QR student card",
+            "Partner discounts and promo codes",
+            "Loyalty stamps and rewards"
+          ]
+        },
+        {
+          "key": "timetable",
+          "title": "Timetable & substitutions",
+          "text": "Your own timetable with your groups and subjects, plus substitutions for your class pulled from the school's system. After your last lesson the view rolls over to tomorrow, and a push notification tells you when something changes.",
+          "bullets": [
+            "Personal timetable with groups",
+            "Substitutions for your class",
+            "Push notifications on changes"
+          ]
+        },
+        {
+          "key": "library",
+          "title": "The school library, searchable",
+          "text": "The whole school library catalogue, searchable with typo tolerance, with live per-copy availability: on the shelf, borrowed, or read-on-site only. Borrowed books show up with their due dates.",
+          "bullets": [
+            "Full-text search over ~14k records",
+            "Live availability per copy",
+            "Loans with due-date reminders"
+          ]
+        },
+        {
+          "key": "food",
+          "title": "Lunch & merch drops",
+          "text": "The weekly catering menu, imported automatically from the caterer's flyers, and a merch shop that runs in drops with a countdown, sizes and order tracking until pickup.",
+          "bullets": [
+            "Weekly menu read from flyers with OCR",
+            "Merch drops with order tracking",
+            "Real-time order status"
+          ]
+        },
+        {
+          "key": "assistant",
+          "title": "An assistant that knows your school",
+          "text": "Pull down for an AI assistant that answers questions from the school's own content and can check your substitutions. Notifications are opt-in per topic, so students only hear about what they care about.",
+          "bullets": [
+            "Retrieval-augmented answers",
+            "Per-topic notification settings",
+            "Answer ratings to improve it"
+          ]
+        }
+      ]
+    },
+    "unityId": {
+      "eyebrow": "One login",
+      "title": "Unity ID: one account for every Unity service",
+      "description": "Projekt Unity is a network of student councils across Wrocław high schools. Unity ID is its shared account: students sign up once and use the same login in Spotty and in other Unity services, such as event tickets and the councils' shared workspace.",
+      "points": [
+        {
+          "title": "Passwordless",
+          "text": "Students sign in with a passkey: fingerprint, face or phone PIN. Invite codes and one-time e-mail codes cover everyone else."
+        },
+        {
+          "title": "One identity",
+          "text": "An OpenID Connect provider issues the identity, and every product keeps its own data linked to that single account."
+        },
+        {
+          "title": "Data shared only with consent",
+          "text": "Another Unity product can read Spotty data, such as a timetable, only through Spotty's API with the student's explicit, revocable consent for a narrow scope."
+        }
+      ]
+    },
+    "platform": {
+      "eyebrow": "The platform",
+      "title": "Schooly is the engine, Spotty is what students see",
+      "description": "Spotty is a white-label product. Students only ever see Spotty; underneath, everything is Schooly: one codebase, one backend and one CMS serving many schools.",
+      "schooly": {
+        "title": "Schooly",
+        "subtitle": "Platform",
+        "items": [
+          "Schooly One: manages schools, modules and access",
+          "Multi-school headless CMS with per-school content, audiences and branding",
+          "Shared backend: auth, database, server functions and storage",
+          "Feature flags and beta programmes per school and per student"
+        ]
+      },
+      "spotty": {
+        "title": "Spotty",
+        "subtitle": "Student app",
+        "items": [
+          "One Flutter app for Android, iOS and the web",
+          "Each school gets its own content, partners and modules",
+          "Student councils publish news, clubs and offers themselves",
+          "Updates reach phones within seconds of publishing"
+        ]
+      }
+    },
+    "architecture": {
+      "eyebrow": "Architecture",
+      "title": "How it fits together",
+      "layers": [
+        {
+          "name": "Clients",
+          "nodes": [
+            "Flutter app · Android & iOS",
+            "Flutter Web (Wasm) · PWA"
+          ]
+        },
+        {
+          "name": "Identity & APIs",
+          "nodes": [
+            "Unity ID · OIDC + passkeys",
+            "Supabase Edge Functions",
+            "Cloudflare Worker · AI assistant"
+          ]
+        },
+        {
+          "name": "Data",
+          "nodes": [
+            "Postgres with row-level security",
+            "Strapi 5 CMS · multi-school",
+            "Storage & content cache"
+          ]
+        },
+        {
+          "name": "Integrations",
+          "nodes": [
+            "School timetable system",
+            "Library catalogue crawler",
+            "Mistral · embeddings & OCR"
+          ]
+        }
+      ],
+      "ops": "Observability: Sentry crash reports, Umami analytics, Better Stack uptime monitors and heartbeats."
+    },
+    "engineering": {
+      "eyebrow": "Engineering",
+      "title": "Problems worth solving",
+      "items": [
+        {
+          "title": "Substitutions, private by design",
+          "text": "The school's substitutions board names teachers. The parser reads a name only long enough to classify a row and throws it away, so no name reaches the cache, the API or the AI assistant. One background watcher keeps the cache warm and exposes a health endpoint. Student requests that used to hang on 15-second timeouts are now served straight from the cache.",
+          "tags": [
+            "Edge Functions",
+            "GDPR",
+            "Caching",
+            "Monitoring"
+          ]
+        },
+        {
+          "title": "A library with no API",
+          "text": "The city's library system has no public API, so a weekly crawler parses its HTML into Postgres, about 14k records with full-text and typo-tolerant search. Per-copy availability is fetched live and cached for 15 minutes, and a cover pipeline falls back through three sources to find book covers.",
+          "tags": [
+            "Crawler",
+            "Postgres FTS",
+            "Railway cron"
+          ]
+        },
+        {
+          "title": "Feature flags that can't be bypassed",
+          "text": "Flags resolve in SQL: a global default plus per-student overrides, read through a view under row-level security. Sensitive features are enforced on the server too, and beta programmes with caps and waitlists let me ship to testers without a store release.",
+          "tags": [
+            "Postgres",
+            "RLS",
+            "Beta programmes"
+          ]
+        },
+        {
+          "title": "A web app that feels native",
+          "text": "The web build compiles to WebAssembly and installs as a PWA on iPhones. Trimming the bundled localisations cut the JavaScript by 10%, and a content cache keyed on CMS webhook revisions means the app only downloads what actually changed.",
+          "tags": [
+            "Flutter Wasm",
+            "PWA",
+            "Performance"
+          ]
+        }
+      ]
+    },
+    "timeline": {
+      "eyebrow": "Timeline",
+      "title": "From first commit to a platform",
+      "items": [
+        {
+          "date": "Jul 2026",
+          "title": "First commit",
+          "text": "Flutter app, Supabase backend and the Strapi CMS set up."
+        },
+        {
+          "date": "Aug 2026",
+          "title": "Google Play",
+          "text": "Store release, marketing site, feature flags and the AI assistant."
+        },
+        {
+          "date": "Sep 2026",
+          "title": "Accounts & reach",
+          "text": "Invite codes and passkeys, consent and legal flows, push notifications, the WebAssembly web build and the library."
+        },
+        {
+          "date": "Oct 2026",
+          "title": "Daily use",
+          "text": "Timetable, catering import, privacy-first substitutions rebuilt on a cache."
+        },
+        {
+          "date": "Nov 2026",
+          "title": "Open to more schools",
+          "text": "Multi-school CMS with per-school branding, the new design, public profiles and Unity ID."
+        }
+      ]
+    },
+    "lineage": {
+      "text": "Spotty grew out of Marmo EDU, my school app that won first place at the XXXII Kalisz IT Competition.",
+      "link": "See Marmo EDU"
+    },
+    "tech": {
+      "title": "Technology Stack"
+    },
+    "cta": {
+      "title": "Want Spotty at your school?",
+      "text": "Spotty is run by students, for students. Student councils can join through Projekt Unity.",
+      "website": "Visit spotty.marmo.uk",
+      "unity": "Projekt Unity"
+    },
+    "screens": {
+      "home": "Spotty home screen with today's lessons, news and widgets",
+      "homeTablet": "Spotty home screen on a tablet in landscape",
+      "card": "Wallet with the QR student card and partner list",
+      "loyalty": "Partner page with a loyalty stamp card",
+      "plan": "Personal timetable for the week",
+      "subs": "Substitutions for a class",
+      "library": "School library search and new arrivals",
+      "book": "Book details with per-copy availability",
+      "catering": "Weekly catering menu",
+      "merch": "Merch drop with countdown and products",
+      "assistant": "AI assistant chat",
+      "notifications": "Notification settings by topic",
+      "login": "Sign-in screen with Unity ID",
+      "passkey": "Creating a passkey during sign-up"
     }
   }
 }
